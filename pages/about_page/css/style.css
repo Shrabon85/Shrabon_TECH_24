@@ -1,0 +1,402 @@
+/*
+    ===========================
+       important css linn start
+    ===========================
+*/
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+
+}
+
+body {
+    font-family: poppins, sans-serif;
+
+}
+
+html body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.clear_div {
+    clear: both;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    max-width: 1200px;
+}
+
+/*
+    ===========================
+       important css linn End
+    ===========================
+*/
+
+
+
+
+/*
+    ===========================
+       section 1 header design start
+    ===========================
+*/
+
+
+.section1 {
+    width: 100%;
+    height: 90px;
+    background: rgb(21, 175, 250);
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    z-index: 1111;
+
+
+}
+
+.section1 .left_logo {
+    float: left;
+}
+
+.section1 .left_logo h1 {
+    color: white;
+    font-size: 40px;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 90px;
+}
+
+.section1 .left_logo a {
+    text-decoration: none;
+}
+
+.section1 .login_button {
+    background: red;
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: white;
+    font-size: 17px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.section1 .menu {
+    float: right;
+    line-height: 90px;
+}
+
+.section1 li {
+    display: inline-block;
+}
+
+.section1 .menu a {
+    position: relative;
+    color: white;
+    font-size: 17px;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: 5px 10px;
+    text-decoration: none;
+}
+
+.section1 .menu a::before {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 3px;
+    background: white;
+    bottom: 0px;
+    left: 0px;
+}
+
+.section1 .menu a:hover::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background: white;
+    bottom: 0px;
+    left: 0px;
+    transition: 0.5s;
+}
+
+.section1 .menu .log_btn a:hover::before {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 0%;
+    background: none;
+    top: 0;
+    right: 0;
+
+
+}
+
+.section1 #check {
+    display: none;
+}
+
+.section1 .show_menu_button,
+.section1 .hide_menu_button {
+    color: white;
+    font-size: 30px;
+    float: right;
+    display: none;
+}
+
+/*
+    ===========================
+      About me page design start
+    ===========================
+*/
+.section2 {
+    padding: 80px 0px;
+}
+
+.section2 .div1 {
+    width: 45%;
+    height: 650px;
+    float: left;
+    background: url(../images/div1%20background.jpg);
+    background-repeat: no-repeat;
+    background-size: 600px;
+    position: relative;
+    border-radius: 30px;
+
+
+}
+
+.section2 .div1 .about_me {
+    width: 85%;
+    position: absolute;
+    bottom: -115px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-align: center;
+    background: white;
+    padding: 30px 30px;
+    box-shadow: 0 20px 18px 0px #00000073;
+    border-radius: 30px;
+}
+
+.section2 .div1 .about_me hr {
+    width: 100px;
+    height: 7px;
+    margin: auto;
+    border: none;
+    margin-top: 2px;
+    margin-bottom: 10px;
+    background: rgb(21, 175, 250);
+}
+
+.section2 .div1 p {
+    text-align: center;
+    line-height: 30px;
+
+
+}
+
+
+.section2 .div2 {
+    width: 50%;
+    float: right;
+
+
+}
+
+.section2 .div2 h1 {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 50px;
+
+}
+
+.section2 .div2 hr {
+    width: 100px;
+    height: 7px;
+    margin: auto;
+    border: none;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    background: rgb(21, 175, 250);
+}
+
+.section2 .div2 img {
+    width: 100%;
+    height: 150px;
+}
+
+.section2 .div2 a {
+    color: black;
+    text-decoration: none;
+}
+
+.section2 .div2 h3 {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.section2 .div2 {
+    font-size: 16px;
+}
+
+.section2 .div2 .box1_2 .box1 {
+    width: 49%;
+    height: 300px;
+    box-shadow: 0 12px 16px #00000052;
+    float: left;
+    margin-right: 2%;
+    text-align: center;
+    padding: 20px 10px;
+}
+
+.section2 .div2 .box1_2 .box2 {
+    width: 49%;
+    height: 300px;
+
+    box-shadow: 0 12px 16px #00000052;
+    padding: 20px 10px;
+
+    float: left;
+    text-align: center;
+
+
+
+}
+
+.section2 .div2 .box3_3 {
+    width: 100%;
+}
+
+.section2 .div2 .box_3_3 .box3 {
+    width: 50%;
+    height: 300px;
+    padding: 20px 10px;
+
+    margin: auto;
+    text-align: center;
+    box-shadow: 0 12px 16px #00000052;
+    margin-top: 20px;
+
+
+
+}
+.section2 .social_icon li{
+    display: inline-block;
+}
+.section2 .social_icon i{
+    font-size: 45px;
+    color: black;
+    margin: 5px;
+}
+
+
+
+/*
+    ===========================
+     About me page design end
+    ===========================
+*/
+
+
+
+
+
+
+
+/*
+    ===========================
+       section 8 start
+    ===========================
+*/
+.section8 {
+    background: #15affa;
+    padding: 50px 0px;
+
+
+}
+
+.section8 .container {
+    width: 700px;
+    text-align: center;
+    color: white;
+    padding: 20px 0px;
+}
+
+.section8 h1 {
+    text-transform: uppercase;
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.section8 .social_icon li{
+    display: inline-block;
+}
+.section8 .social_icon i{
+    font-size: 45px;
+    color: black;
+    margin: 10px 5px;
+}
+
+
+.section8 .menu li {
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.section8 .menu a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 2px solid white;
+    border-radius: 15px;
+    text-transform: uppercase;
+    margin: 5px;
+
+}
+
+/*
+    ===========================
+       section 8 end
+    ===========================
+*/
+/*
+    ===========================
+       section 9 start
+    ===========================
+*/
+.section9 {
+    background: #035b86;
+
+}
+
+.section9 .container {
+    width: 400px;
+    text-align: center;
+    color: white;
+    padding: 10px 0px;
+}
+
+
+/*
+    ===========================
+       section 9 end
+    ===========================
+*/

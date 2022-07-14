@@ -1,0 +1,851 @@
+/*
+    ===========================
+       important css linn start
+    ===========================
+*/
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+
+}
+
+body {
+    font-family: poppins, sans-serif;
+
+}
+
+html body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.clear_div {
+    clear: both;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    max-width: 1200px;
+}
+
+/*
+    ===========================
+       important css linn End
+    ===========================
+*/
+
+
+
+
+/*
+    ===========================
+       section 1 header design start
+    ===========================
+*/
+
+
+.section1 {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(21, 175, 250, 0.8), rgba(21, 175, 250, 0.9)), url(../images/background_image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    clip-path: polygon(50% 0%, 100% 0, 100% 70%, 50% 100%, 50% 100%, 0 70%, 0 0);
+}
+
+.section1 .left_logo {
+    float: left;
+}
+
+.section1 .left_logo h1 {
+    color: white;
+    font-size: 40px;
+    text-transform: uppercase;
+    line-height: 90px;
+}
+
+.section1 .left_logo a {
+    text-decoration: none;
+}
+
+.section1 .login_button {
+    background: red;
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: white;
+    font-size: 17px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.section1 .menu {
+    float: right;
+    line-height: 90px;
+}
+
+.section1 li {
+    display: inline-block;
+}
+
+.section1 .menu a {
+    position: relative;
+    color: white;
+    font-size: 17px;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: 5px 10px;
+    text-decoration: none;
+}
+
+
+.section1 .menu a::before {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 3px;
+    background: white;
+    bottom: 0px;
+    left: 0px;
+}
+
+.section1 .menu .log_btn a:hover::before {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 0%;
+    background: none;
+    top: 10;
+    right: 0;
+
+
+}
+
+.section1 .menu a:hover::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background: white;
+    bottom: 0px;
+    left: 0px;
+    transition: 0.5s;
+}
+
+.section1 #check {
+    display: none;
+}
+
+.section1 .show_menu_button,
+.section1 .hide_menu_button {
+    color: white;
+    font-size: 30px;
+    float: right;
+    display: none;
+}
+
+.section1 .log_signbtn {
+    float: right;
+}
+
+.section1 .header_mid_div {
+    width: 100%;
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+.section1 .header_mid_div h1 {
+    font-size: 60px;
+    color: white;
+    font-weight: 600;
+}
+
+.section1 .header_mid_div p {
+    font-size: 25px;
+    color: white;
+}
+
+.section1 .header_mid_div button {
+    background: none;
+    border: 2px solid white;
+    border-radius: 10px;
+    color: white;
+    font-size: 20px;
+    margin-top: 20px;
+    padding: 15px 50px;
+
+
+}
+
+
+
+
+
+
+
+/*
+    ===========================
+       section 1 header design End
+    ===========================
+*/
+
+
+/*
+    ===========================
+       section 2 start
+    ===========================
+*/
+.section2 .container {
+    max-width: 1150px;
+    margin-top: 40px;
+}
+
+.section2 .box1 {
+    width: 32%;
+    padding: 40px 30px;
+    float: left;
+    text-align: center;
+
+}
+
+.section2 .box1 h2 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.section2 .box1 i {
+    font-size: 50px;
+}
+
+.section2 .box2 {
+    width: 32%;
+    float: left;
+    padding: 40px 30px;
+    text-align: center;
+    margin-left: 2%;
+    margin-right: 2%;
+
+}
+
+.section2 .box2 h2 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.section2 .box2 i {
+    font-size: 50px;
+}
+
+.section2 .box3 {
+    width: 32%;
+    float: left;
+    padding: 40px 30px;
+    text-align: center;
+
+}
+
+.section2 .box3 h2 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.section2 .box3 i {
+    font-size: 50px;
+}
+
+.section2 .box1:hover,
+.section2 .box2:hover,
+.section2 .box3:hover {
+    box-shadow: 0px 0px 16px 8px #0000001c;
+    transform: translatey(-20px);
+    transition: 0.3s;
+}
+
+
+
+/*
+    ===========================
+       section 2 end
+    ===========================
+*/
+
+/*
+    ===========================
+       section 3 start
+    ===========================
+*/
+.section3 {
+    background: #80808014;
+    padding: 70px 0px;
+    margin-top: 40px;
+}
+
+.section3 .container {
+    max-width: 1100px;
+}
+
+.section3 .div1 {
+    width: 40%;
+    float: left;
+    margin-top: 30px;
+}
+
+.section3 .div1 hr {
+    width: 100px;
+    height: 7px;
+    background: rgb(21, 175, 250);
+    border: none;
+}
+
+.section3 .div1 h1 {
+    font-size: 35px;
+    text-align: justify;
+}
+
+.section3 .div1 p {
+    margin-top: 30px;
+    line-height: 30px;
+    text-align: justify;
+
+}
+
+.section3 .div2 {
+    width: 55%;
+    float: right;
+}
+
+.section3 .box1,
+.section3 .box2,
+.section3 .box3,
+.section3 .box4 {
+    width: 48%;
+    text-align: center;
+    float: left;
+    padding: 30px;
+}
+
+.section3 .box1:hover,
+.section3 .box2:hover,
+.section3 .box3:hover,
+.section3 .box4:hover {
+    box-shadow: 0px 0px 16px 8px #0000001c;
+    transform: translatey(-20px);
+    transition: 0.3s;
+}
+
+.section3 .box1 {
+    margin-right: 4%;
+}
+
+.section3 .box3 {
+    margin-right: 4%;
+}
+
+.section3 .box1 i,
+.section3 .box2 i,
+.section3 .box3 i,
+.section3 .box4 i {
+    font-size: 40px;
+    border: 2px solid rgb(21, 175, 250);
+    color: rgb(21, 175, 250);
+    padding: 10px;
+}
+
+.section3 .box1 h4,
+.section3 .box2 h4,
+.section3 .box3 h4,
+.section3 .box4 h4 {
+    font-size: 25px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+
+/*
+    ===========================
+       section 3 end
+    ===========================
+*/
+
+
+
+/*
+    ===========================
+       section 4 start
+    ===========================
+*/
+
+.section4 {
+    padding: 50px 0px;
+}
+
+.section4 .container {
+    max-width: 1100px;
+}
+
+.section4 .left_div {
+    width: 50%;
+    float: left;
+
+}
+
+.section4 .left_div img {
+    width: 400px;
+    border-radius: 30px
+}
+
+.section4 .social_icon{
+    width: 400px;
+    text-align: center;
+}
+.section4 .social_icon li{
+    display: inline-block;
+}
+.section4 .social_icon i{
+    font-size: 50px;
+    color: black;
+    margin: 5px;
+}
+
+
+
+.section4 .right_div {
+    width: 50%;
+    float: right;
+
+}
+
+.section4 .right_div p {
+    line-height: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.section4 .right_div .icon_list {
+    margin-left: 20px;
+}
+
+.section4 .right_div li {
+    list-style-type: none;
+    font-weight: 600;
+}
+
+.section4 .right_div .button {
+    margin-top: 30px;
+}
+
+.section4 .right_div .button a {
+    background: rgba(21, 175, 250);
+    color: white;
+    padding: 10px 30px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+
+
+/*
+    ===========================
+       section 4 end
+    ===========================
+*/
+
+
+/*
+    ===========================
+       section 5 start
+    ===========================
+*/
+
+.section5 {
+    padding: 70px 0px;
+    background: #0db1ff14;
+}
+
+.section5 .container {
+    max-width: 1100px;
+}
+
+.section5 .box1 {
+    width: 30%;
+    float: left;
+    overflow: hidden;
+}
+
+.section5 .box1 h2 {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.section5 .box1 p {
+    text-align: center;
+    line-height: 30px;
+
+}
+.section5 .image_box{
+    overflow: hidden;
+}
+.section5 .box1 img {
+    width: 100%;
+}
+.section5 .box1 img:hover{
+        transform: scale(1.5);
+    transition: 0.8s;
+
+}
+.section5 .box_div3{
+    width: 30%;
+    float: left;
+}
+
+.section5 .box2 {
+    width: 30%;
+    float: left;
+    margin-left: 5%;
+    margin-right: 5%;
+
+
+}
+
+.section5 .box2 h2 {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+
+.section5 .box2 p {
+    text-align: center;
+    line-height: 30px;
+
+}
+
+.section5 .box2 img {
+    width: 100%;
+}
+.section5 .box2 img:hover{
+        transform: scale(1.5);
+    transition: 0.8s;
+
+}
+
+.section5 .box3 {
+    width: 100%;
+
+}
+
+.section5 .box3 h2 {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.section5 .box3 p {
+    text-align: center;
+    line-height: 30px;
+}
+
+.section5 .box3 img {
+    width: 100%;
+}
+.section5 .box3 img:hover{
+        transform: scale(1.5);
+    transition: 0.8s;
+
+}
+.section5 .social_icon{
+    text-align: center;
+}
+.section5 .social_icon li{
+    display: inline-block;
+}
+.section5 .social_icon i{
+    font-size: 40px;
+    color: black;
+    margin: 5px;
+}
+
+
+
+/*
+    ===========================
+       section 5 end
+    ===========================
+*/
+
+/*
+    ===========================
+       section 6 start
+    ===========================
+*/
+
+.section6 .container {
+    width: 100%;
+    height: 600px;
+    position: relative;
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    object-fit: cover;
+}
+.section6 .container img{
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    position: absolute;
+    top:0%;
+    left: 10%;
+    z-index: -1;
+}
+
+
+
+.section6 {
+    padding: 70px 0px;
+}
+
+.section6 .container2 {
+    margin: auto;
+    max-width: 1100px;
+    margin-top: -200px;
+}
+
+.section6 .box1 {
+    width: 30%;
+    float: left;
+    background: white;
+    padding: 20px;
+    box-shadow: 0px 38px 10px #0000009e;
+}
+
+.section6 .box1 .icon,
+.section6 .box2 .icon,
+.section6 .box3 .icon {
+    text-align: center;
+}
+
+.section6 .box1 i,
+.section6 .box2 i,
+.section6 .box3 i {
+    font-size: 50px;
+    color: rgb(21, 175, 250);
+}
+
+.section6 .box1 h2 {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.section6 .box1 p {
+    text-align: center;
+    line-height: 30px;
+
+}
+
+.section6 .box1 img {
+    width: 100%;
+}
+
+.section6 .box2 {
+    width: 30%;
+    float: left;
+    margin-left: 5%;
+    margin-right: 5%;
+    background: white;
+    padding: 20px;
+    box-shadow: 0px 38px 10px #0000009e;
+
+
+
+
+}
+
+.section6 .box2 h2 {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+
+.section6 .box2 p {
+    text-align: center;
+    line-height: 30px;
+
+}
+
+.section6 .box2 img {
+    width: 100%;
+}
+
+.section6 .box3 {
+    width: 30%;
+    float: left;
+    background: white;
+    padding: 20px;
+    box-shadow: 0px 38px 10px #0000009e;
+
+
+
+}
+
+.section6 .box3 h2 {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.section6 .box3 p {
+    text-align: center;
+    line-height: 30px;
+}
+
+.section6 .box3 img {
+    width: 100%;
+}
+
+/*
+    ===========================
+       section 6 end
+    ===========================
+*/
+
+/*
+    ===========================
+       section 7 start
+    ===========================
+*/
+
+
+.section7 .container {
+    padding: 100px 0px;
+    max-width: 700px;
+}
+
+.section7 form {
+    text-align: center;
+}
+
+.section7 input {
+    width: 500px;
+    font-size: 17px;
+    padding: 10px;
+    outline: none;
+    border: 2px solid rgb(21, 175, 250);
+    border-right: none;
+    border-radius: 20px 0px 0px 20px;
+
+}
+
+.section7 button {
+    padding: 13px 40px 14px 40px;
+    border: none;
+    outline: none;
+    background: rgb(21, 175, 250);
+    margin-left: -5px;
+    border-radius: 0px 20px 20px 0px;
+    color: white;
+    font-size: 15px;
+}
+
+/*
+    ===========================
+       section 7 end
+    ===========================
+*/
+/*
+    ===========================
+       section 8 start
+    ===========================
+*/
+.section8 {
+    background: #15affa;
+    padding: 50px 0px;
+
+}
+
+.section8 .container {
+    width: 700px;
+    text-align: center;
+    color: white;
+    padding: 20px 0px;
+}
+
+.section8 h1 {
+    text-transform: uppercase;
+    font-size: 50px;
+}
+
+.section8 .social_icon li{
+    display: inline-block;
+}
+.section8 .social_icon i{
+    font-size: 45px;
+    color: black;
+    margin: 10px 5px;
+}
+
+.section8 .menu li {
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.section8 .menu a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 2px solid white;
+    border-radius: 15px;
+    text-transform: uppercase;
+    margin: 5px;
+
+}
+
+/*
+    ===========================
+       section 8 end
+    ===========================
+*/
+/*
+    ===========================
+       section 9 start
+    ===========================
+*/
+.section9 {
+    background: #035b86;
+}
+
+.section9 .container {
+    width: 400px;
+    text-align: center;
+    color: white;
+    padding: 10px 0px;
+}
+
+
+/*
+    ===========================
+       section 9 end
+    ===========================
+*/

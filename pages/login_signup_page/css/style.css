@@ -1,0 +1,344 @@
+/*
+    ===========================
+       important css linn start
+    ===========================
+*/
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+
+}
+
+body {
+    font-family: poppins, sans-serif;
+
+}
+
+html body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.clear_div {
+    clear: both;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    max-width: 1200px;
+}
+
+/*
+    ===========================
+       important css linn End
+    ===========================
+*/
+
+
+
+
+/*
+    ===========================
+       section 1 header design start
+    ===========================
+*/
+
+
+.section1{
+    width: 100%;
+    height: 90px;
+    background: rgb(21, 175, 250);
+
+   
+}
+
+.section1 .left_logo{
+    float: left;
+}
+.section1 .left_logo h1{
+    color: white;
+    font-size: 40px;
+    text-transform: uppercase;
+    line-height: 90px;
+}
+.section1 .left_logo a{
+    text-decoration: none;
+}
+.section1 .login_button{
+    background: #ff0000;
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: white;
+    font-size: 17px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.section1 .menu{
+    float: right;
+    line-height: 90px;
+}
+.section1 li{
+    display: inline-block;
+}
+.section1 .menu  a{
+    position: relative;
+    color: white;
+    font-size: 17px;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: 5px 10px;
+    text-decoration: none;
+}
+.section1 .menu a::before{
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 3px;
+    background: white;
+    bottom: 0px;
+    left: 0px;
+}
+.section1 .menu a:hover::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background: white;
+    bottom: 0px;
+    left: 0px;
+    transition: 0.5s;
+}
+.section1 .menu .log_btn a:hover::before{
+  content: "";
+    position: absolute;
+    width: 0%;
+    height: 0%;
+    background: none;
+   top: 0;
+    right: 0;
+    
+
+}
+
+.section1 #check{
+    display: none;
+}
+.section1 .show_menu_button,
+.section1 .hide_menu_button{
+    color: white;
+    font-size: 30px;
+    float: right;
+    display: none;
+}/*===== GOOGLE FONTS =====*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
+/*===== VARIABLES CSS =====*/
+:root{
+  /*===== Colores =====*/
+  --first-color: #1A73E8;
+  --input-color: #80868B;
+  --border-color: #DADCE0;
+
+  /*===== Fuente y tipografia =====*/
+  --body-font: 'poppins', sans-serif;
+  --normal-font-size: 1rem;
+  --small-font-size: .75rem;
+}
+  
+/*===== BASE =====*/
+*,::before,::after{
+  box-sizing: border-box;
+}
+body{
+  margin: 0;
+  padding: 0;
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+}
+h1{
+  margin: 0;
+}
+
+/*===== FORM =====*/
+
+.form{
+  width: 360px;
+  padding: 70px 40px ;
+  border-radius: 1rem;
+  box-shadow: 0 10px 25px rgba(92,99,105,.2);
+    margin: auto;
+    margin-top: 50px;
+}
+.form__title{
+  font-weight: 400;
+  margin-bottom: 3rem;
+    text-align: center;
+}
+.form__div{
+  position: relative;
+  height: 48px;
+  margin-bottom: 1.5rem;
+}
+.form__input{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  font-size: var(--normal-font-size);
+  border: 1px solid var(--border-color);
+  border-radius: .5rem;
+  outline: none;
+  padding: 1rem;
+  background: none;
+  z-index: 1;
+}
+.form__label{
+  position: absolute;
+  left: 1rem;
+  top: 0.7rem;
+  padding: 0 .25rem;
+  background-color: #fff;
+  color: var(--input-color);
+  font-size: var(--normal-font-size);
+  transition: .3s;
+}
+.form__button{
+  display: block;
+  margin: auto;
+  padding: .75rem 2rem;
+  outline: none;
+  border: none;
+  background-color: var(--first-color);
+  color: #fff;
+  font-size: var(--normal-font-size);
+  border-radius: .5rem;
+  cursor: pointer;
+  transition: .3s;
+
+}
+.form__button:hover{
+  box-shadow: 0 10px 36px rgba(0,0,0,.15);
+}
+
+/*Input focus move up label*/
+.form__input:focus + .form__label{
+  top: -.5rem;
+  left: .8rem;
+  color: #1A73E8;
+    border-left: 1.5px solid  #1A73E8 !important;
+    border-right: 1.5px solid  #1A73E8 !important;
+  font-size: var(--small-font-size);
+  font-weight: 500;
+  z-index: 10;
+}
+
+/*Input focus sticky top label*/
+.form__input:not(:placeholder-shown).form__input:not(:focus)+ .form__label{
+  top: -.5rem;
+  left: .8rem;
+  font-size: var(--small-font-size);
+  font-weight: 500;
+  z-index: 10;
+}
+
+/*Input focus*/
+.form__input:focus{
+  border: 1.5px solid var(--first-color);
+}
+
+.section1 .log_signbtn{
+    float: right;
+}
+
+
+/*
+    ===========================
+      fotter section start
+    ===========================
+*/
+.section8 {
+    background: #15affa;
+    padding: 50px 0px;
+    margin-top: 55px;
+
+}
+
+.section8 .container {
+    width: 700px;
+    text-align: center;
+    color: white;
+    padding: 20px 0px;
+}
+
+.section8 h1 {
+    text-transform: uppercase;
+    font-size: 50px;
+}
+
+.section8 .social_icon li{
+    display: inline-block;
+}
+.section8 .social_icon i{
+    font-size: 45px;
+    color: black;
+    margin: 10px 5px;
+}
+
+.section8 .menu li {
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.section8 .menu a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 2px solid white;
+    border-radius: 15px;
+    text-transform: uppercase;
+    margin: 5px;
+
+}
+
+/*
+    ===========================
+       fotter section end
+    ===========================
+*/
+/*
+    ===========================
+       fotter credit start
+    ===========================
+*/
+.section9 {
+    background: #035b86;
+}
+
+.section9 .container {
+    width: 400px;
+    text-align: center;
+    color: white;
+    padding: 10px 0px;
+}
+
+
+/*
+    ===========================
+       fotter credit end
+    ===========================
+*/
+
+
